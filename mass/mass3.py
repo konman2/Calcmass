@@ -117,5 +117,6 @@ def calculate(elements):
 for i in range(1,len(args)):
    val = add_markers(args[i])
    elements = strip_coeff(val)
-   print(args[i] + ':',end=' ')
+   if len(args) > 2:
+      print(args[i] + ':',end=' ')
    print("%0.5f" % calculate(elements))
