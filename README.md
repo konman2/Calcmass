@@ -16,10 +16,6 @@ For python2 version run:
 ```
 $ bash ~/Mass/setupMass.bash
 ```
-For python3 version run:
-```
-$ bash ~/Mass/setupMassPy3.bash
-```
 This will move the Mass directory to your home directory so if you move it to another directory you have to change the PATH variable in your ~/.bashrc
 ## License
 Mass is licensed under the MIT License - see the LICENSE file for details.
