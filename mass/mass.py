@@ -119,10 +119,10 @@ def calculate(elements):
          build += elements[i]
    return count
 
-
-for i in range(1, len(args)):
-   val = add_markers(args[i])
-   elements = strip_coeff(val)
-   if len(args) > 2:
-      print(args[i] + ':', end=' ')
-   print("%0.5f" % calculate(elements))
+if __name__ == "__main__":
+   for i in range(1, len(args)):
+      val = add_markers(args[i])
+      elements = strip_coeff(val)
+      if len(args) > 2:
+         print(args[i] + ':', end=' ')
+      print("%0.5f" % calculate(elements))
