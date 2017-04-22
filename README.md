@@ -2,11 +2,11 @@
 A python script to find the molecular mass in g/mol of a chemical equation
 ## Example
 ```
-$ molmass C6H12O6
+$ calcmass C6H12O6
 180.15588
-$ molmass Cr2O7
+$ calcmass Cr2O7
 215.98800
-$ molmass C11H22
+$ calcmass C11H22
 154.29238
 ```
 ## Setup
@@ -14,13 +14,13 @@ You can download using PyPi
 
 Using pip:
 ```
-$ pip install molmass
+$ pip install calcmass
 ```
-Or download the zip file at https://pypi.python.org/pypi/molmass/0.1.1
+Or download the zip file at https://pypi.python.org/pypi/calcmass/1.0
 
 Then run:
 ```
-$ python install molmass
+$ python setup.py install
 ```
 
 ## License
