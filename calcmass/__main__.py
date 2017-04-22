@@ -1,5 +1,5 @@
 from __future__ import print_function
-from molmass import mass
+from calcmass import mass
 import sys
 
 def main():

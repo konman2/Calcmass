@@ -3,6 +3,7 @@ from __future__ import print_function
 import csv
 import sys
 import os
+from calcmass import get_data
 
 val = ""
 multiples = {}
@@ -86,7 +87,7 @@ def find_row_element(read, val):
 def calc_single_element(val):
    count = 0
    #os.chdir(os.path.dirname(os.path.abspath(__file__)))
-   with open('molmass/data/pt-data1.csv', 'r') as csvfile:
+   with open(get_data('pt-data1.csv'), 'r') as csvfile:
       read = csv.reader(csvfile)
       row = find_row_element(read, val)
       if row != -1:
@@ -114,5 +115,3 @@ def calculate(elements):
       else:
          build += elements[i]
    return count
-
-
