@@ -11,9 +11,17 @@ $ molmass C11H22
 ```
 ## Setup
 You can download using PyPi
+
 Using pip:
 ```
 $ pip install molmass
 ```
+Or download the zip file at https://pypi.python.org/pypi/molmass/0.1.1
+
+Then run:
+```
+$ python install molmass
+```
+
 ## License
 Mass is licensed under the MIT License - see the LICENSE file for details.
