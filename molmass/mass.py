@@ -1,15 +1,11 @@
 #!/usr/bin/python
 from __future__ import print_function
-import sys
 import csv
+import sys
 import os
 
-args = sys.argv
 val = ""
 multiples = {}
-if len(args) == 1:
-   print("Enter an argument")
-   sys.exit(1)
 
 
 def add_commas(orig):
@@ -89,8 +85,8 @@ def find_row_element(read, val):
 
 def calc_single_element(val):
    count = 0
-   os.chdir(os.path.dirname(os.path.abspath(__file__)))
-   with open('pt-data1.csv', 'r') as csvfile:
+   #os.chdir(os.path.dirname(os.path.abspath(__file__)))
+   with open('molmass/data/pt-data1.csv', 'r') as csvfile:
       read = csv.reader(csvfile)
       row = find_row_element(read, val)
       if row != -1:
@@ -119,10 +115,4 @@ def calculate(elements):
          build += elements[i]
    return count
 
-if __name__ == "__main__":
-   for i in range(1, len(args)):
-      val = add_markers(args[i])
-      elements = strip_coeff(val)
-      if len(args) > 2:
-         print(args[i] + ':', end=' ')
-      print("%0.5f" % calculate(elements))
+

@@ -1,0 +1,7 @@
+.DS_Store
+dist
+molmass.egg_info
+molmass.egg-info
+build
+*.pyc
+*~
