@@ -21,9 +21,9 @@ def add_commas(orig):
 
 # adds comma markers so rest of the functions can work
 def add_markers(val):
-   if val.find('-'):
+   if val.find('-') != -1:
       val = val.replace('-', ',')
-   if val.find(' '):
+   if val.find(' ') != -1:
       val = val.replace(' ', ',')
    if ',' not in val:
       val = add_commas(val)
