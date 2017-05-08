@@ -1,2 +1,1 @@
 include runner README.md
-include calcmass/data/*.csv
