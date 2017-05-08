@@ -16,9 +16,13 @@ You can download using PyPi
 
 Using pip:
 ```
-$ pip install calcmass
+$ pip install --user calcmass
 ```
-Or download the zip file at https://pypi.python.org/pypi/calcmass/1.0
+For system wide download(Not Suggested):
+```
+$ sudo pip install calcmass
+```
+Or download the zip file at https://pypi.python.org/pypi/calcmass/1.5
 
 Then run:
 ```
@@ -26,8 +30,14 @@ $ python setup.py install
 ```
 If the calcmass command is not found add this to your .bashrc or .bash_profile
 
+MacOs:
 ```
 $ export PATH=$PATH:$HOME/Library/Python/2.7/bin
 ```
+Linux:
+```
+$ export PATH=$PATH:$HOME/.local/bin
+```
+
 ## License
 Mass is licensed under the MIT License - see the LICENSE file for details.
