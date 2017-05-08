@@ -8,6 +8,8 @@ $ calcmass Cr2O7
 215.98800
 $ calcmass C11H22
 154.29238
+$ calcmass Al2Si2O5[OH]4
+258.16044
 ```
 ## Setup
 You can download using PyPi
@@ -22,6 +24,10 @@ Then run:
 ```
 $ python setup.py install
 ```
+If the calcmass command is not found add this to your .bashrc or .bash_profile
 
+```
+$ export PATH=$PATH:$HOME/Library/Python/2.7/bin
+```
 ## License
 Mass is licensed under the MIT License - see the LICENSE file for details.
