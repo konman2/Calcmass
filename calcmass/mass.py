@@ -1,6 +1,6 @@
 #!/usr/bin/python
 from __future__ import print_function
-from pt_data import masses
+from calcmass.pt_data import masses
 val = ""
 multiples = {}
 
