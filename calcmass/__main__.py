@@ -1,5 +1,5 @@
 from __future__ import print_function
-import mass
+from calcmass import mass
 import argparse
 
 
