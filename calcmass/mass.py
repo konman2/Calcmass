@@ -4,7 +4,6 @@ from pt_data import masses
 val = ""
 multiples = {}
 
-
 def add_commas(orig):
     with_Commas = ""
     for i in range(len(orig) - 1):
@@ -79,7 +78,6 @@ def add_markers(val):
 
 # adds coefficients and symbol to the multiples dictionary
 def add(mult, symb):
-    global multiples
     com = symb.find(",")
     if com >= 0:
         symb = symb[:com]

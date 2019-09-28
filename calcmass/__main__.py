@@ -1,6 +1,6 @@
 from __future__ import print_function
-from calcmass import mass
-import argparse
+import mass
+from calcmass import argparse
 
 
 def main():
@@ -20,7 +20,7 @@ def main():
         else:
             raise argparse.ArgumentParser.error(parser, 'Not a compound: ' +
                                                 mass.calculate(elements))
-
+        mass.multiples.clear()
 
 if __name__ == "__main__":
     main()
