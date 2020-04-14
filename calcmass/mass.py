@@ -1,6 +1,4 @@
-from calcmass import pt_data
-
-masses = pt_data.masses
+from calcmass.pt_data import masses
 val = ""
 multiples = {}
 
@@ -33,7 +31,7 @@ def distribute(val, num):
     sub = 1
     for i in range(len(val)):
         if not val[i].isalpha():
-            sub = int(find_num(i, val))
+            sub = float(find_num(i, val))
             sub *= num
             build += str(sub)
             i += len(find_num(i, val)) - 1
@@ -56,7 +54,7 @@ def distrib_parenth(val):
         close = val.find(')', op)
         between = val[op+1:close]
         if close+1 < len(val) and not val[close+1].isalpha() and val[close+1] != '':
-            num = int(val[close+1])
+            num = float(val[close+1])
             val = val[:op] + distribute(between, num) + val[close+2:]
         else:
             val = val[:op] + distribute(between, num) + val[close+1:]
@@ -96,7 +94,7 @@ def strip_coeff(val):
     i = 0
     while i < len(val):
         if not val[i].isalpha() and val[i] != ',':
-            num = int(find_num(i, val))
+            num = float(find_num(i, val))
             add(num, symb)
             coeff = True
         if val[i] == ',':
