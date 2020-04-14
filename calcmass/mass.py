@@ -1,9 +1,6 @@
-#!/usr/bin/python
-from __future__ import print_function
 from calcmass.pt_data import masses
 val = ""
 multiples = {}
-
 
 def add_commas(orig):
     with_Commas = ""
@@ -28,7 +25,7 @@ def find_num(i, val):
     return val[i:count]
 
 
-# distributes the vnumber to all the numbers in the string
+# distributes the parameter 'num' to all the numbers in the string
 def distribute(val, num):
     build = ""
     sub = 1
@@ -79,7 +76,6 @@ def add_markers(val):
 
 # adds coefficients and symbol to the multiples dictionary
 def add(mult, symb):
-    global multiples
     com = symb.find(",")
     if com >= 0:
         symb = symb[:com]

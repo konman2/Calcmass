@@ -22,7 +22,7 @@ For system wide download(Not Suggested):
 ```
 $ sudo pip install calcmass
 ```
-Or download the zip file at https://pypi.python.org/pypi/calcmass/1.5
+Or download the zip file at https://pypi.python.org/pypi/calcmass/2.0
 
 Then run:
 ```
@@ -32,7 +32,7 @@ If the calcmass command is not found add this to your .bashrc or .bash_profile
 
 MacOs:
 ```
-export PATH=$PATH:$HOME/Library/Python/2.7/bin
+export PATH=$PATH:$HOME/Library/Python/3.7/bin
 ```
 Linux:
 ```
