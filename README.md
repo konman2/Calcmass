@@ -22,7 +22,7 @@ For system wide download(Not Suggested):
 ```
 $ sudo pip install calcmass
 ```
-Or download the zip file at https://pypi.python.org/pypi/calcmass/1.5
+Or download the zip file at https://pypi.python.org/pypi/calcmass/2.0
 
 Then run:
 ```
