@@ -32,7 +32,7 @@ If the calcmass command is not found add this to your .bashrc or .bash_profile
 
 MacOs:
 ```
-export PATH=$PATH:$HOME/Library/Python/2.7/bin
+export PATH=$PATH:$HOME/Library/Python/3.7/bin
 ```
 Linux:
 ```

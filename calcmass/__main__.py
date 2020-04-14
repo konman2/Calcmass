@@ -1,4 +1,4 @@
-import mass
+from calcmass import mass
 import argparse
 
 

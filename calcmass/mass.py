@@ -1,6 +1,6 @@
-#!/usr/bin/python
-from __future__ import print_function
-from pt_data import masses
+from calcmass import pt_data
+
+masses = pt_data.masses
 val = ""
 multiples = {}
 
@@ -27,7 +27,7 @@ def find_num(i, val):
     return val[i:count]
 
 
-# distributes the vnumber to all the numbers in the string
+# distributes the parameter 'num' to all the numbers in the string
 def distribute(val, num):
     build = ""
     sub = 1
